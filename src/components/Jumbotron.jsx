@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Jumbotron() {
   return (
-    <div className="jumbotron">
+    <div className="jumbotron bg-success text-white">
       <h1 className="display-4">Hello, world!</h1>
       <p className="lead">
         This is a simple hero unit, a simple jumbotron-style component for
@@ -13,7 +13,7 @@ export default function Jumbotron() {
         It uses utility classes for typography and spacing to space content out
         within the larger container.
       </p>
-      <a className="btn btn-primary btn-lg" href="#" role="button">
+      <a className="btn bg-white text-success btn-lg" href="#" role="button">
         Learn more
       </a>
     </div>
