@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Card({ title, image, content }) {
+export default function Card({ title, image }) {
   const [like, setLike] = useState(0);
   const [dislike, setDislike] = useState(0);
 
@@ -19,7 +19,6 @@ export default function Card({ title, image, content }) {
       <img src={image} className="card-img-top" alt={title} />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
-        <p className="card-text">{content}</p>
         <a onClick={likeHandler} className="btn btn-success">
           {like} Like
         </a>
